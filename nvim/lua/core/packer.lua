@@ -35,8 +35,9 @@ return require('packer').startup(function(use)
 				flavour = "macchiato", -- latte, frappe, macchiato, mocha
 			})
 		end,
-		run = ':colorscheme catppuccin',
+	 	run = ':colorscheme catppuccin',
 	}
+
 
 	-- vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
 	-- vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
