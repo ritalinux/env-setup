@@ -11,7 +11,7 @@ https://github.com/ritalinux/env-setup.git && cd env-setup
 chmod +x setup.sh
 ./setup.sh
 ```
-- Paste this snippet into ~/.bashrc or ~/.zshrc file if you don`t have it (after setup`s done)
+- Paste this snippet into ~/.bashrc or ~/.zshrc file if you don't have it (after setup's done)
 ```
 if [ -z "$TMUX" ]; then
   tmux new -d -s delete-me && \\
