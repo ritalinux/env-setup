@@ -1,12 +1,12 @@
 #!/bin/bash
-pkgs=(fuse curl git tmux)
+pkgs=(fuse curl git tmux zsh)
 pkgsApt=(libfuse2)
 pkgsAur=(fuse2)
 
 if [ -x "$(command -v pacman)" ];
 then
-    sudo pacman -Sy "${pkgs[@]}"
-    sudo pacman -Sy "${pkgsAur[@]}"
+    sudo pacman --noconfirm -Sy "${pkgs[@]}"
+    sudo pacman --noconfirm -Sy "${pkgsAur[@]}"
 elif [ -x "$(command -v apt)" ];
 then
     sudo apt install -y "${pkgs[@]}"
@@ -33,3 +33,7 @@ mkdir ~/.config/nvim
 cp -v -r ./nvim/* ~/.config/nvim
 cp -v -r ./tmux/tmux.conf ~/.tmux.conf
 
+curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" > /dev/null
+
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions

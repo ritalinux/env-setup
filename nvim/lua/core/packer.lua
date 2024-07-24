@@ -2,7 +2,14 @@ local ensure_packer =  function()
 	local fn = vim.fn
 	local install_path = fn.stdpath("data") .. "/site/pack/packer/start/packer.nvim"
 	if fn.empty(fn.glob(install_path)) > 0 then
-		fn.system({ "git", "clone", "--depth", "1", "https://github.com/wbthomason/packer.nvim", install_path })
+		fn.system({ 
+            "git", 
+            "clone", 
+            "--depth", 
+            "1", 
+            "https://github.com/wbthomason/packer.nvim", 
+            install_path 
+        })
 		vim.cmd([[packadd packer.nvim]])
 		return true
 	end
@@ -26,6 +33,24 @@ return require('packer').startup(function(use)
 	use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
 	use('christoomey/vim-tmux-navigator', { lazy = false })
 	use('tpope/vim-fugitive')
+	use('tpope/vim-obsession')
+
+    use {
+        "windwp/nvim-autopairs",
+        event = "InsertEnter",
+        config = function()
+            require("nvim-autopairs").setup {
+                map_cr = true
+            }
+        end
+    }
+
+    use {
+        'numToStr/Comment.nvim',
+        config = function()
+            require('Comment').setup()
+        end
+    }
 
 	use {
 		'catppuccin/nvim',
@@ -33,14 +58,11 @@ return require('packer').startup(function(use)
 		config = function()
 			require("catppuccin").setup({
 				flavour = "macchiato", -- latte, frappe, macchiato, mocha
+				transparent_background = true,
 			})
 		end,
 	 	run = ':colorscheme catppuccin',
 	}
-
-
-	-- vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
-	-- vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
 	
 	if packer_bootstrap then
 		require('packer').sync()
