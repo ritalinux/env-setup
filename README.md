@@ -22,7 +22,7 @@ fi
 ```
 
 ## Notes
-Neovim will report an error on the first 2 launches but everything is fine, just continue by pressing <PD><Enter>
+Neovim will report an error on the first 2 launches but everything is fine, just continue by pressing `<PD><Enter>`
 (It will try to run plugins that will be downloaded on the first launch and configured on the second)
 
 
