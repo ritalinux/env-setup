@@ -29,8 +29,10 @@ Neovim will report an error on the first 2 launches but everything is fine, just
 
 
 ## Working on 
-| Distro                        | Date / Release              |
-|-------------------------------|-----------------------------|
-| Arch Linux                    | 2024-06-02                  |
-| Ubuntu                        | 18.04 LTS                   |
-| Big Linux                     | 2024-07-24
+| Distro                        | Date / Release              |      Tag    |
+|-------------------------------|-----------------------------|-------------|
+| Arch Linux                    | 2024-06-02                  |  <= v0.1.0  |
+| Ubuntu                        | 18.04 LTS                   |  <= v0.1.0  |
+| Big Linux                     | 2024-07-26                  |  <= v0.1.0  |
+
+
