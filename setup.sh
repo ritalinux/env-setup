@@ -32,6 +32,7 @@ mkdir ~/.config/nvim
 
 cp -v -r ./nvim/* ~/.config/nvim
 cp -v -r ./tmux/tmux.conf ~/.tmux.conf
+cp -v -r ./bin/* ~/.local/bin
 
 curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" > /dev/null
