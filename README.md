@@ -30,7 +30,7 @@ be downloaded on the first launch and configured on the second)
 
 
 Tmux will not behave as expected on the first launch, remember to install the  
-plugins with <prefix + I> and <prefix + U>
+plugins with `<prefix + I>` and `<prefix + U>`
 
 ## Working on 
 | Distro                        | Date / Release              |      Tag    |
