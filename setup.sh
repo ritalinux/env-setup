@@ -17,7 +17,7 @@ rm -rf ~/.tmux/
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 curl -LO https://github.com/neovim/neovim/releases/download/v0.9.5/nvim.appimage
-chmod u+x nvim.appimage
+
 sudo mv nvim.appimage /usr/local/bin/nvim
 
 rm -rf ~/nvim
@@ -33,6 +33,8 @@ mkdir ~/.config/nvim
 cp -v -r ./nvim/* ~/.config/nvim
 cp -v -r ./tmux/tmux.conf ~/.tmux.conf
 cp -v -r ./bin/* ~/.local/bin
+
+chmod u+x nvim.appimage ~/.local/bin/tmux-sessionizer
 
 curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" 2> /dev/null
