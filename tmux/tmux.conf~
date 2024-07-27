@@ -1,7 +1,7 @@
 unbind r
 bind r source-file ~/.tmux.conf \; display-message "~/.tmux.conf reloaded"
 
-unbind C-BSpace
+unbind C-Backspace
 
 set -ga terminal-overrides ",screen-256color*:Tc"
 set-option -g default-terminal "screen-256color"
