@@ -9,12 +9,12 @@ Repo for new development environments
 ## Setup
 - Download and setup
 ```
-https://github.com/ritalinux/env-setup.git && cd env-setup
+git clone https://github.com/ritalinux/env-setup.git && cd env-setup
 chmod +x setup.sh
 ./setup.sh
 ```
 - Paste this snippet into ~/.zshrc file if you don't have it (after setup's done)
-```
+```Shell script
 if [ -z "$TMUX" ]; then
   tmux new -d -s delete-me && \\
   tmux run-shell ~/.tmux/plugins/tmux-resurrect/scripts/restore.sh && \\
