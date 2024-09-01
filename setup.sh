@@ -35,6 +35,7 @@ cp -v -r ./tmux/tmux.conf ~/.tmux.conf
 cp -v -r ./bin/* ~/.local/bin
 
 chmod u+x ~/.local/bin/tmux-sessionizer.sh
+chmod u+x ~/.local/bin/tmux-nvim-file-to-panel.sh
 
 curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" > /dev/null
