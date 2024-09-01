@@ -5,7 +5,6 @@ Repo for new development environments
 - Neovim
 - Tmux
 
-
 ## Setup
 - Download and setup
 ```
@@ -28,7 +27,6 @@ Neovim will report an error on the first 2 launches but everything is fine,
 just continue by pressing `<PD><Enter>` (It will try to run plugins that will
 be downloaded on the first launch and configured on the second)
 
-
 Tmux will not behave as expected on the first launch, remember to install the  
 plugins with `<prefix + I>` and `<prefix + U>`
 
@@ -37,6 +35,6 @@ plugins with `<prefix + I>` and `<prefix + U>`
 |-------------------------------|-----------------------------|-------------|
 | Arch Linux                    | 2024-06-02                  |  <= v0.1.0  |
 | Ubuntu                        | 18.04 LTS                   |  <= v0.1.0  |
-| Big Linux                     | 2024-07-26                  |  == v0.1.1  |
+| Big Linux                     | 2024-08-30                  |  == v0.2.0  |
 
 
