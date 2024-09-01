@@ -29,11 +29,7 @@ return require('packer').startup(function(use)
 	use('nvim-lua/plenary.nvim')
 	use('wbthomason/packer.nvim')
 	use('nvim-lualine/lualine.nvim')
-	use('nvim-telescope/telescope.nvim', { tag = '0.1.5' })
 	use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
-	use('christoomey/vim-tmux-navigator', { lazy = false })
-	use('tpope/vim-fugitive')
-	use('tpope/vim-obsession')
 
     use {
         "windwp/nvim-autopairs",
