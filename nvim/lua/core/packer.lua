@@ -32,6 +32,14 @@ return require('packer').startup(function(use)
 	use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
     use('nvim-telescope/telescope.nvim', { tag = '0.1.5' })
 
+    -- LSP   
+    use('VonHeikemen/lsp-zero.nvim', { branch = 'v4.x' })
+    use('neovim/nvim-lspconfig')
+    use('hrsh7th/cmp-nvim-lsp')
+    use('hrsh7th/nvim-cmp')
+    use('williamboman/mason.nvim')
+    use('williamboman/mason-lspconfig.nvim')
+    
     use {
         "windwp/nvim-autopairs",
         event = "InsertEnter",
