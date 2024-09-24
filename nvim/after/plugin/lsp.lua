@@ -71,4 +71,4 @@ cmp.setup({
       vim.snippet.expand(args.body)
     end,
   },
-})})
+})
