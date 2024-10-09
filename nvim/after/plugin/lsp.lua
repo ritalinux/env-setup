@@ -40,8 +40,8 @@ require('mason-lspconfig').setup({
       'jsonls',
       'kotlin_language_server',
       'marksman',
-      'ruff',
       'rust_analyzer',
+      'pyright',
       'sqls',
       'volar',
       'yamlls'
