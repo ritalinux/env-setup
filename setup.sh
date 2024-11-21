@@ -16,7 +16,7 @@ fi
 rm -rf ~/.tmux/
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
-curl -LO https://github.com/neovim/neovim/releases/download/v0.9.5/nvim.appimage
+curl -LO https://github.com/neovim/neovim/releases/download/v0.10.1/nvim.appimage
 chmod u+x nvim.appimage
 sudo mv nvim.appimage /usr/local/bin/nvim
 
