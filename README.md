@@ -15,9 +15,9 @@ chmod +x setup.sh
 - Paste this snippet into ~/.zshrc file if you don't have it (after setup's done)
 ```Shell script
 if [ -z "$TMUX" ]; then
-  tmux new -d -s delete-me && \\
-  tmux run-shell ~/.tmux/plugins/tmux-resurrect/scripts/restore.sh && \\
-  tmux kill-session -t delete-me && \\
+  tmux new -d -s delete-me && 
+  tmux run-shell ~/.tmux/plugins/tmux-resurrect/scripts/restore.sh && 
+  tmux kill-session -t delete-me && 
   tmux attach || tmux attach
 fi
 ```
